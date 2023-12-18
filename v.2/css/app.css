@@ -1,0 +1,407 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#hamburger {
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+header img {
+    width: 400px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    box-shadow: 1px 1px 1px gray;
+    transition: all .6s;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+
+main {
+    padding-top: 100px;
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+}
+
+main section#bgHome {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+main section article#homePos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: auto;
+}
+
+main section article#homePos div.image {
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+main section article#homePos img {
+    width: 300px;
+}
+
+main section div#content article {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    background-color: aliceblue;
+    width: 800px;
+    padding: 30px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+main section div#content article p {
+    text-align: justify;
+}
+
+main section div#content article h1 ~ p {
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+}
+
+main section form input {
+    width: 700px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 999px;
+    border: 1px solid black;
+}
+
+main section form input:focus {
+    outline: none;
+}
+
+main section form textarea {
+    padding: 10px;
+    width: 700px;
+    height: 200px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+main section form textarea:focus {
+    outline: none;
+}
+
+
+main section aside.profile {
+    margin-top: 50px;
+    width: 300px;
+    border: 1px solid gray;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 25px;
+    padding: 20px;
+    background-color: aliceblue;
+    height: 400px;
+}
+
+main section aside.profile div.photo img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+main section aside.profile p {
+    text-align: justify;
+}
+
+main section aside.profile div.contact img {
+    margin-top: 15px;
+    filter: grayscale(1);
+}
+
+main section aside.profile div.contact img:hover {
+    filter: grayscale(0);
+    transition: .5s;
+}
+
+main section aside.profile div.contact img.fb {
+    width: 40px;
+    border-radius: 50%;
+}
+
+main section aside.profile div.contact img.yt {
+    width: 40px;
+    margin-left: 10px;
+}
+
+main section aside.profile div.contact img.ig {
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+
+footer {
+    margin-top: 100px;
+    padding: 30px 50px;
+    background-color: rgb(211, 224, 224);
+}
+
+footer section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer section div.alamat {
+    margin-bottom: 20px;
+}
+
+footer section div.logo img {
+    width: 400px;
+}
+
+footer p.copy {
+    display: flex;
+    justify-content: center;
+}
+
+.abu-abu {
+    filter: grayscale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* widthnya salah */
+@media screen and (max-width: 768px){    
+    /* HEADER */
+
+    #hamburger {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: start;
+    }
+    
+    header nav ul li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    header nav ul:last-child li:nth-child(2) {
+        margin-left: 40px;
+    }
+
+    header hr {
+        display: none;
+    }
+
+    .tampil {
+        display: none;
+    }
+
+    .shadow {
+        box-shadow: 1px 1px 0px gray;
+        border-radius: 999px;
+    }
+
+
+    /* MAIN */
+    main {
+        padding-top: 100px;
+    }
+    
+    main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    main section article#homePos {
+        padding: 40px 0px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    main section article#homePos div.image {
+        flex-direction: column;
+    }
+    
+    main section article#homePos img {
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    
+    main section div#content {
+        order: 5;
+    }
+
+    main section div#content article {
+        width: 90vw;
+        margin: auto;
+        padding: 20px 0px;
+        margin-top: 15px;
+    }
+
+    main section div#content article * {
+        padding: 10px 15px;
+    }
+    
+    main section form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main section form * {
+        margin-left: 0px;
+        padding: 10px 0px;
+    }
+
+    main section form input,
+    main section form textarea {
+        width: 70vw;
+    }
+    
+    main section form input:focus {
+        outline: none;
+    }
+    
+    main section aside.profile {
+        width: 90vw;
+        margin: auto;
+        order: 1;
+        margin-top: 50px;
+        padding: 20px 0px;
+    }
+    
+    main section aside.profile div.photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    main section aside.profile * {
+        padding: 0px 10px;
+    }
+
+    main section aside.profile div.photo img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    
+    footer section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer section div.alamat {
+        order: 5;
+    }
+
+    footer section div.logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer section div.logo img {
+        max-width: 100%;
+        order: 1;
+    }
+
+    footer section div h2,
+    footer section div p {
+        text-indent: 10vw;
+    }
+
+
+}

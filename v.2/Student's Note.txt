@@ -1,0 +1,6 @@
+Fitur fitur javascript saya : 
+
+1. scrolling pada navbar
+2. saat layar < 768, maka navbar akan hilang digantikan tombol menu yang saat di klik menampilkan tombol nav
+3. saat discroll, maka elemen yang ditutupi oleh nav akan blur
+4. saat offline maka semua gambar akan menjadi gray, saat online kembali seperti semula
